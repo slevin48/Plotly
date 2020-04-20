@@ -1,0 +1,31 @@
+function quitModule()
+
+    etc_tlbx  = get_absolute_file_path("Plotly.quit");
+    etc_tlbx  = getshortpathname(etc_tlbx);
+    root_tlbx = strncpy( etc_tlbx, length(etc_tlbx)-length("\etc\") );
+
+    // Remove macros
+    if(isdef("Plotlylib")) then
+        m = libraryinfo("Plotlylib");
+        clear Plotlylib;
+        clear(m);
+    end
+
+    // Remove Preferences GUI
+    // =============================================================================
+    if getscilabmode() == "STD" then
+        removeModulePreferences(root_tlbx);
+    end
+
+endfunction
+
+// Remove macros
+if(isdef("Plotlylib")) then
+    m = libraryinfo("Plotlylib");
+    clear Plotlylib;
+    clear(m);
+    clear m;
+end
+
+quitModule();
+clear quitModule;

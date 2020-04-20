@@ -1,0 +1,52 @@
+function Plotlylib = startModule()
+
+    TOOLBOX_NAME  = "Plotly";
+    TOOLBOX_TITLE = "Plotly";
+
+    mprintf("Start " + TOOLBOX_TITLE + "\n");
+
+    if isdef("Plotlylib") then
+        warning(TOOLBOX_TITLE+" is already loaded");
+        return;
+    end
+
+    etc_tlbx  = get_absolute_file_path("Plotly.start");
+    etc_tlbx  = getshortpathname(etc_tlbx);
+    root_tlbx = strncpy( etc_tlbx, length(etc_tlbx)-length("\etc\") );
+
+    //Load  functions library
+    // =============================================================================
+    mprintf("\tLoad macros\n");
+    pathmacros = pathconvert( root_tlbx ) + "macros" + filesep();
+    Plotlylib = lib(pathmacros);
+
+    // Load and add help chapter
+    // =============================================================================
+    if %t && or(getscilabmode() == ["NW";"STD"]) then
+        mprintf("\tLoad help\n");
+        path_addchapter = pathconvert(root_tlbx+"/jar");
+        if ( isdir(path_addchapter) <> [] ) then
+            add_help_chapter(TOOLBOX_NAME, path_addchapter, %F);
+        end
+    end
+
+    // Load demos
+    // =============================================================================
+    if %t && or(getscilabmode() == ["NW";"STD"]) then
+        mprintf("\tLoad demos\n");
+        pathdemos = pathconvert(root_tlbx+"/demos/Plotly.dem.gateway.sce", %F, %T);
+        add_demo(TOOLBOX_TITLE, pathdemos);
+    end
+
+    // Load Preferences GUI
+    // =============================================================================
+    if or(getscilabmode() == ["NW";"STD"]) then
+        if isfile(etc_tlbx + "Plotly_preferences.xml") then
+            addModulePreferences(TOOLBOX_TITLE, root_tlbx, etc_tlbx + "Plotly_preferences.xml");
+        end
+    end
+
+endfunction
+
+Plotlylib = startModule();
+clear startModule; // remove startModule on stack

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns5="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook"
+          xmlns:scilab="http://www.scilab.org"
+          xml:id="Plotly" xml:lang="en">
+  <info>
+    <pubdate>$LastChangedDate$</pubdate>
+  </info>
+    <refnamediv>
+        <refname>Plotly_getpath</refname>
+        <refpurpose>Short description</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv>
+        <title>Syntax</title>
+        <synopsis>
+            path = Plotly_getpath()
+        </synopsis>
+    </refsynopsisdiv>
+    <refsection>
+        <title>Arguments</title>
+        <variablelist>
+            <varlistentry>
+                <term>path</term>
+                <listitem>
+                    <para>root path of the toolbox</para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+    </refsection>
+    <refsection>
+        <title>Description</title>
+        <variablelist>
+            <varlistentry>
+                <listitem>
+                    <para>Get path of the toolbox.</para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+    </refsection>
+    <refsection>
+        <title>Examples</title>
+        <programlisting role="example">
+            path = Plotly_getpath();
+        </programlisting>
+    </refsection>
+</refentry>
