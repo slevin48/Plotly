@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scilablib name="Plotlylib">
-  <macro name="Plotly_getpath" file="Plotly_getpath.bin" md5="ee9ff6d9b522e1fbee1dbad7f0d55434"/>
-  <macro name="plotly" file="plotly.bin" md5="b9f8ba00fae801811619d37a8212e598"/>
-  <macro name="scatterly" file="scatterly.bin" md5="ce2de7d3e8621789be864744450a71a4"/>
-</scilablib>

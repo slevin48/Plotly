@@ -1,9 +1,10 @@
 function subdemolist = demo_gateway()
     demopath = get_absolute_file_path("Plotly.dem.gateway.sce");
 
-    subdemolist = ["Sine Demo", "plotly_sin.dem.sce";
-                    "Scatter Demo", "scatterly_sin.dem.sce";
-                    "Scatter 1", "scatterly_1.dem.sce"];
+    subdemolist = ["Simple sine plot", "plotly_sin.dem.sce";
+                    "Scatter sine plot", "scatterly_sin.dem.sce";
+                    "Scatter plot 1", "scatterly_1.dem.sce";
+                    "Bar plot 1", "barly_1.dem.sce"];
 
     subdemolist(:,2) = demopath + subdemolist(:,2);
 
