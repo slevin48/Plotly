@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!--Begin Entities-->
+<!ENTITY a60cda0c1c941fbb54656a2698b6d66bb SYSTEM "file:///C:/Users/ydb/devel/Plotly/help/en_US/Plotly_getpath.xml">
+<!ENTITY aa3ec58ace87e477add6566c5d5ef4c62 SYSTEM "file:///C:/Users/ydb/devel/Plotly/help/en_US/plotly.xml">
+<!--End Entities-->
+]>
+<book version="5.0-subset Scilab" xml:lang="en_US"
+      xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info xml:id='plotly_manual'>
+    <title>Plotly</title>
+  </info>
+
+<part xml:id='section_713f39468fd86f798fdc4f40c9bf7363'>
+<title>Plotly</title>
+&a60cda0c1c941fbb54656a2698b6d66bb;
+&aa3ec58ace87e477add6566c5d5ef4c62;
+</part>
+</book>
