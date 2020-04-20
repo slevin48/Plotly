@@ -1,6 +1,6 @@
 function demo_plotly_sin()
     x=[0:0.1:2*%pi];
-    y=sin(x);
+    y=2*sin(x);
     plotly(x,y)
 endfunction
 

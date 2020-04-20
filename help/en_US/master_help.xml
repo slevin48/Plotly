@@ -3,6 +3,7 @@
 <!--Begin Entities-->
 <!ENTITY a60cda0c1c941fbb54656a2698b6d66bb SYSTEM "file:///C:/Users/ydb/devel/Plotly/help/en_US/Plotly_getpath.xml">
 <!ENTITY aa3ec58ace87e477add6566c5d5ef4c62 SYSTEM "file:///C:/Users/ydb/devel/Plotly/help/en_US/plotly.xml">
+<!ENTITY a4b9cdf6d0713f6379b2a82607c5a8ca1 SYSTEM "file:///C:/Users/ydb/devel/Plotly/help/en_US/scatterly.xml">
 <!--End Entities-->
 ]>
 <book version="5.0-subset Scilab" xml:lang="en_US"
@@ -21,5 +22,6 @@
 <title>Plotly</title>
 &a60cda0c1c941fbb54656a2698b6d66bb;
 &aa3ec58ace87e477add6566c5d5ef4c62;
+&a4b9cdf6d0713f6379b2a82607c5a8ca1;
 </part>
 </book>
