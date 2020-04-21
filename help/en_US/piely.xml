@@ -6,18 +6,18 @@
           xmlns:mml="http://www.w3.org/1998/Math/MathML"
           xmlns:db="http://docbook.org/ns/docbook"
           xmlns:scilab="http://www.scilab.org"
-          xml:id="plotly" xml:lang="en">
+          xml:id="piely" xml:lang="en">
   <info>
     <pubdate>$LastChangedDate$</pubdate>
   </info>
     <refnamediv>
-        <refname>plotly</refname>
+        <refname>piely</refname>
         <refpurpose>Short description</refpurpose>
     </refnamediv>
     <refsynopsisdiv>
         <title>Syntax</title>
         <synopsis>
-            plotly(x, y)
+            piely(x,txt)
         </synopsis>
     </refsynopsisdiv>
     <refsection>
@@ -26,13 +26,13 @@
             <varlistentry>
                 <term>x</term>
                 <listitem>
-                    <para>vector or matrix of real numbers or integers.</para>
+                    <para>Values</para>
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term>y</term>
+                <term>txt</term>
                 <listitem>
-                    <para>vector or matrix of real numbers or integers.</para>
+                    <para>Labels</para>
                 </listitem>
             </varlistentry>
         </variablelist>
@@ -42,7 +42,9 @@
         <variablelist>
             <varlistentry>
                 <listitem>
-                    <para>plotly plots a 2D curve and export it as an HTML file.</para>
+                    <para>piely(x,txt): the txt vector allows to write a text for each part of the pie, the ith component of txt corresponds to the ith part (default : it's written the percentages which corresponds to the parts surface). The size of txt must be equal to N.</para>
+                    <para>if size of x is N then pie function draws a pie with N parts, the area of the ith part is equal to (x(i)/sum(x))*( surface of the unit circle).</para>
+                    
                 </listitem>
             </varlistentry>
         </variablelist>
@@ -50,17 +52,15 @@
     <refsection>
         <title>Examples</title>
         <programlisting role="example">
-            x=[0:0.1:2*%pi];
-            y=2*sin(x);
-            plotly(x,y)
+            piely([3 4 6 2],["part1","part2","part3","part4"]);
         </programlisting>
     </refsection>
     <refsection role="see also">
         <title>See also</title>
         <simplelist type="inline">
+            <member><link linkend="plotly">plotly</link></member>
             <member><link linkend="scatterly">scatterly</link></member>
             <member><link linkend="barly">barly</link></member>
-            <member><link linkend="piely">piely</link></member>
         </simplelist>
     </refsection>
 </refentry>

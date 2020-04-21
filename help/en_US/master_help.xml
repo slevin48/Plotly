@@ -3,6 +3,7 @@
 <!--Begin Entities-->
 <!ENTITY a60cda0c1c941fbb54656a2698b6d66bb SYSTEM "file:///C:/Users/ydb/devel/Plotly/help/en_US/Plotly_getpath.xml">
 <!ENTITY af25644cd7b29e59d03050495dce22d3d SYSTEM "file:///C:/Users/ydb/devel/Plotly/help/en_US/barly.xml">
+<!ENTITY a9bec5922094cdb9d2572973d1dedb256 SYSTEM "file:///C:/Users/ydb/devel/Plotly/help/en_US/piely.xml">
 <!ENTITY aa3ec58ace87e477add6566c5d5ef4c62 SYSTEM "file:///C:/Users/ydb/devel/Plotly/help/en_US/plotly.xml">
 <!ENTITY a4b9cdf6d0713f6379b2a82607c5a8ca1 SYSTEM "file:///C:/Users/ydb/devel/Plotly/help/en_US/scatterly.xml">
 <!--End Entities-->
@@ -23,6 +24,7 @@
 <title>Plotly</title>
 &a60cda0c1c941fbb54656a2698b6d66bb;
 &af25644cd7b29e59d03050495dce22d3d;
+&a9bec5922094cdb9d2572973d1dedb256;
 &aa3ec58ace87e477add6566c5d5ef4c62;
 &a4b9cdf6d0713f6379b2a82607c5a8ca1;
 </part>

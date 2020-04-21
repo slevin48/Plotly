@@ -35,20 +35,23 @@
     <div class="refnamediv"><h1 class="refname">scatterly</h1>
         <p class="refpurpose">Short description</p></div>
     <div class="refsynopsisdiv"><h3 class="title">Syntax</h3>
-        <div class="synopsis"><pre><span class="default">result</span><span class="default"> = </span><span class="functionid">scatterly</span><span class="default">(</span><span class="default">argument#1</span><span class="default">, </span><span class="default">argument#2</span><span class="default">)</span></pre></div></div>
+        <div class="synopsis"><pre><span class="functionid">scatterly</span><span class="default">(</span><span class="default">x</span><span class="default">,</span><span class="default">y</span><span class="default">)</span></pre></div></div>
     <div class="refsection"><h3 class="title">Arguments</h3>
-        <dl><dt><span class="term">argument#1</span>
-                <dd><p class="para">argument#1 type and description.</p></dd></dt>
-            <dt><span class="term">argument#2</span>
-                <dd><p class="para">argument#2 type and description.</p></dd></dt>
-            <dt><span class="term">resultat</span>
-                <dd><p class="para">Resultat description</p></dd></dt></dl></div>
+        <dl><dt><span class="term">x, y</span>
+                <dd><p class="para">Columns or rows vectors of n real numbers specifying the abscissae and the ordinates of the centers of markers.</p></dd></dt></dl></div>
     <div class="refsection"><h3 class="title">Description</h3>
-        <dl><dt><dd><p class="para">Function description.</p></dd></dt></dl></div>
+        <dl><dt><dd><p class="para">scatterly(x,y) creates a scatter plot with markers centered at the (x, y) set of coordinates.</p>
+                    <p class="para">The default type of the marker is a circle, the default color is &#0034;blue&#0034; .</p></dd></dt></dl></div>
     <div class="refsection"><h3 class="title">Examples</h3>
-        <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabid">scatterly</span><span class="scilabopenclose">(</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
+        <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabcomment">// x and y initialisation</span>
+<span class="scilabid">x</span> <span class="scilaboperator">=</span> <a class="scilabmacro" href="scilab://linspace">linspace</a><span class="scilabopenclose">(</span><span class="scilabnumber">0</span><span class="scilabdefault">,</span><span class="scilabnumber">2</span><span class="scilabdefault">,</span><span class="scilabnumber">100</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
+<span class="scilabid">y</span> <span class="scilaboperator">=</span> <a class="scilabcommand" href="scilab://exp">exp</a><span class="scilabopenclose">(</span><span class="scilaboperator">-</span><span class="scilabid">x</span><span class="scilabopenclose">)</span><span class="scilaboperator">.*</span><a class="scilabcommand" href="scilab://cos">cos</a><span class="scilabopenclose">(</span><span class="scilabnumber">10</span><span class="scilaboperator">*</span><span class="scilabid">x</span><span class="scilabopenclose">)</span> <span class="scilaboperator">+</span> <span class="scilabnumber">0.2</span><span class="scilaboperator">*</span><a class="scilabcommand" href="scilab://rand">rand</a><span class="scilabopenclose">(</span><span class="scilabnumber">1</span><span class="scilabdefault">,</span><a class="scilabcommand" href="scilab://length">length</a><span class="scilabopenclose">(</span><span class="scilabid">x</span><span class="scilabopenclose">)</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
+<span class="scilabcomment">// create 2D scatter plot</span>
+<span class="scilabid">scatterly</span><span class="scilabopenclose">(</span><span class="scilabid">x</span><span class="scilabdefault">,</span><span class="scilabid">y</span><span class="scilabopenclose">)</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
     <div class="refsection"><h3 class="title">See also</h3>
-        <ul class="itemizedlist"><li class="member"><a href="scilab://another_function_name" class="link">another_function_name</a></li></ul></div>
+        <ul class="itemizedlist"><li class="member"><a href="plotly-26c592956dc26ca2aef5dbacc204a306.html" class="link">plotly</a> &#8212; Short description</li>
+            <li class="member"><a href="barly.html" class="link">barly</a> &#8212; Short description</li>
+            <li class="member"><a href="piely.html" class="link">piely</a> &#8212; Short description</li></ul></div>
     <br />
 
     <div class="manualnavbar">
